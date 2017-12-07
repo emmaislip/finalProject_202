@@ -1,0 +1,1 @@
+__IntegralAS_95a0d1e2982374af8952ff3391377f8c_4472({"geo":{"dma":"819","state":"WA","country":"US"},"risk":{"hat":"low risk"},"rsa":1000})

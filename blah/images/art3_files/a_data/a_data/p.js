@@ -1,0 +1,1 @@
+!function(a){var b="_viantTMC";b in window&&window[b].exec?window[b].exec(a):console.log("Failed execute vtm callback")}({t:"zGrfQt3m4qH-vA",app:"vtm",v:"1.2", ss:"3217674353", sn:"pdx1-ucid002.ads"});

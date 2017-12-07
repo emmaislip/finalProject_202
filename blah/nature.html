@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<div class="nature">
+<div id="header">
+
+  <link href="style.css" link rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade">
+  <meta charset="utf-8">
+  <title>Nature Photography</title>
+  <h1>more pics</h1>
+
+</div>
+
+<div id="container">
+
+<body>
+
+
+<nav>
+  <div class="dropdown">
+    <button class="dropbtn">Welcome</button>
+    <div class="dropdown-content">
+      <a href="index.html">Home Page</a>
+      <a href="about.html">About Page</a>
+      <a href="contact.html">Contact Me!</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Resume</button>
+    <div class="dropdown-content">
+      <a href="work.html">Work Experience</a>
+      <a href="education.html">Education</a>
+      <a href="writing.html">Writing Portfolio</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Likes</button>
+    <div class="dropdown-content">
+      <a href="authors.html">Author Inspiration</a>
+      <a href="art.html">Art Inspiration</a>
+      <a href="music.html">Music Inspiration</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">Gallery</button>
+    <div class="dropdown-content">
+      <a href="nature.html">Nature Photography</a>
+      <a href="travel.html">Travel Photography</a>
+      <a href="food.html">Foodie Photography</a>
+    </div>
+  </div>
+
+</div>
+</nav>
+</div>
+
+
+<!--Gallery-->
+
+<<div class="slideshow-container">
+
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 13</div>
+  <img src="images/garden2.jpg" style="width:100%">
+  <div class="text">Rose.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 13</div>
+  <img src="images/garden3.jpg" style="width:100%">
+  <div class="text">Garden Cont.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 13</div>
+  <img src="images/joe.jpg" style="width:100%">
+  <div class="text">Snow Lake.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 13</div>
+  <img src="images/green.jpg" style="width:100%">
+  <div class="text">Bellingham,WA.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 13</div>
+  <img src="images/lake1.jpg" style="width:100%">
+  <div class="text">Snow Lake.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 13</div>
+  <img src="images/laketrees.jpg" style="width:100%">
+  <div class="text">More trees.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 13</div>
+  <img src="images/greenwater.jpg" style="width:100%">
+  <div class="text">Northbend,WA.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 13</div>
+  <img src="images/northbend.jpg" style="width:100%">
+  <div class="text">Northbend,WA.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 13</div>
+  <img src="images/beach.jpg" style="width:100%">
+  <div class="text">Bellingham,WA.</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 13</div>
+  <img src="images/canada.jpg" style="width:100%">
+  <div class="text">Vancouver, CA.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">12 / 13</div>
+  <img src="images/rock.jpg" style="width:100%">
+  <div class="text">Bellingham,WA.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">11 / 13</div>
+  <img src="images/powerline.jpg" style="width:100%">
+  <div class="text">Sunset.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">12 / 13</div>
+  <img src="images/feet.jpg" style="width:100%">
+  <div class="text">My feet.</div>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">13 / 13</div>
+  <img src="images/forest.jpg" style="width:100%">
+  <div class="text">More trees.</div>
+</div>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+
+
+
+<div id="footer">
+
+    <p><i> Copyright &copy; 2017 Emma Islip </i></p>
+    <p>
+          <a href="http://facebook.com"> Facebook </a> |
+          <a href="http://twitter.com"> Twitter </a> |
+          <a href="http://youtube.com"> Youtube</a>
+          </p>
+</div>
+</div>
+
+
+
+</body>
+</div>
+</html>
